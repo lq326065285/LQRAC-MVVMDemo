@@ -1,0 +1,30 @@
+PODS:
+  - Aspects (1.4.1)
+  - HandyFrame (1.1.2)
+  - Masonry (0.6.4)
+  - MBProgressHUD (1.0.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - Aspects
+  - HandyFrame
+  - Masonry (~> 0.6.3)
+  - MBProgressHUD (~> 1.0.0)
+  - ReactiveCocoa (~> 2.5)
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  HandyFrame: d505faced4d4fb820d66bd88b654dbf7b88da424
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: 10e94065c12bfb9bcaaa69e1e0c37da8a3624bdb
+
+COCOAPODS: 1.2.0
