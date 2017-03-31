@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LQSetUserInfoVC">
             <connections>
                 <outlet property="btnSure" destination="LVj-zg-Hws" id="MZU-Mx-gEc"/>
+                <outlet property="testButton" destination="rMs-ec-8ek" id="bCg-t6-caR"/>
                 <outlet property="textField" destination="YD7-RR-7YT" id="Aqs-Jg-AYC"/>
                 <outlet property="view" destination="PoE-hv-pr4" id="cmg-K4-FoE"/>
             </connections>
@@ -40,13 +41,20 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMs-ec-8ek">
+                    <rect key="frame" x="165" y="400" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="LVj-zg-Hws" firstAttribute="leading" secondItem="PoE-hv-pr4" secondAttribute="leading" constant="16" id="6p5-P9-kdq"/>
+                <constraint firstItem="rMs-ec-8ek" firstAttribute="centerX" secondItem="PoE-hv-pr4" secondAttribute="centerX" id="KDX-5l-9GF"/>
                 <constraint firstAttribute="trailing" secondItem="YD7-RR-7YT" secondAttribute="trailing" constant="16" id="URI-eB-oAM"/>
                 <constraint firstItem="LVj-zg-Hws" firstAttribute="top" secondItem="YD7-RR-7YT" secondAttribute="bottom" constant="47" id="aF9-ts-rc6"/>
-                <constraint firstItem="YD7-RR-7YT" firstAttribute="top" secondItem="PoE-hv-pr4" secondAttribute="top" constant="80" id="pfQ-yp-Ynk"/>
+                <constraint firstItem="rMs-ec-8ek" firstAttribute="centerY" secondItem="PoE-hv-pr4" secondAttribute="centerY" priority="750" id="fGN-cn-EVX"/>
+                <constraint firstItem="rMs-ec-8ek" firstAttribute="top" secondItem="PoE-hv-pr4" secondAttribute="top" constant="400" id="hUW-Sb-0K6"/>
+                <constraint firstItem="YD7-RR-7YT" firstAttribute="top" secondItem="PoE-hv-pr4" secondAttribute="top" priority="750" constant="80" id="pfQ-yp-Ynk"/>
                 <constraint firstItem="YD7-RR-7YT" firstAttribute="leading" secondItem="PoE-hv-pr4" secondAttribute="leading" constant="16" id="s2p-2D-a4D"/>
                 <constraint firstAttribute="trailing" secondItem="LVj-zg-Hws" secondAttribute="trailing" constant="16" id="tZB-9b-hAI"/>
             </constraints>

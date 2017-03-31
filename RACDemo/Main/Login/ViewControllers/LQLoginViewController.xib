@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LQLoginViewController">
             <connections>
                 <outlet property="btnSure" destination="K9P-hd-On8" id="esv-eb-hdg"/>
+                <outlet property="labAlert" destination="z5g-EF-fiU" id="bfO-SR-vKN"/>
                 <outlet property="textFName" destination="jjY-Vt-1wC" id="vg4-cM-Wt6"/>
                 <outlet property="textFPassword" destination="C9b-st-9qg" id="VGL-NL-a5g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -81,18 +82,30 @@
                         <action selector="clickLogin:" destination="-1" eventType="touchUpInside" id="n5B-7E-6Gm"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5g-EF-fiU">
+                    <rect key="frame" x="105" y="535" width="165" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="kOD-0C-2Me"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="jjY-Vt-1wC" firstAttribute="leading" secondItem="3bz-i3-BkS" secondAttribute="trailing" constant="8" id="0Rw-p5-rie"/>
+                <constraint firstItem="z5g-EF-fiU" firstAttribute="top" secondItem="K9P-hd-On8" secondAttribute="bottom" constant="96" id="2Zf-BU-pMr"/>
                 <constraint firstItem="flk-kM-xck" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="109" id="ACc-Vl-YvG"/>
                 <constraint firstItem="jjY-Vt-1wC" firstAttribute="top" secondItem="flk-kM-xck" secondAttribute="bottom" constant="36" id="AyB-RD-Blt"/>
                 <constraint firstAttribute="trailing" secondItem="jjY-Vt-1wC" secondAttribute="trailing" constant="16" id="BL7-th-I31"/>
                 <constraint firstItem="3bz-i3-BkS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="250" id="OL8-aG-zMz"/>
                 <constraint firstAttribute="trailing" secondItem="K9P-hd-On8" secondAttribute="trailing" constant="16" id="Obf-2r-H6m"/>
+                <constraint firstItem="z5g-EF-fiU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="105" id="Olb-Jq-SRg"/>
                 <constraint firstItem="flk-kM-xck" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Px8-Io-RuU"/>
                 <constraint firstItem="C9b-st-9qg" firstAttribute="leading" secondItem="l3c-7w-dva" secondAttribute="trailing" constant="7" id="WAl-MC-iMN"/>
                 <constraint firstItem="K9P-hd-On8" firstAttribute="top" secondItem="C9b-st-9qg" secondAttribute="bottom" constant="65" id="YL1-BS-Pq0"/>
+                <constraint firstAttribute="trailing" secondItem="z5g-EF-fiU" secondAttribute="trailing" constant="105" id="Zar-bK-wTF"/>
                 <constraint firstItem="K9P-hd-On8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="b3Q-Sw-3GP"/>
                 <constraint firstAttribute="trailing" secondItem="C9b-st-9qg" secondAttribute="trailing" constant="16" id="icT-Xe-P3V"/>
                 <constraint firstItem="l3c-7w-dva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="mhx-XV-0Mb"/>

@@ -15,5 +15,6 @@
 @property (nonatomic,copy) NSString * content;
 
 @property (nonatomic,strong) RACCommand * sureCommand;
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
 
 @end

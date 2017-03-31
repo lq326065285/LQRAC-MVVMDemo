@@ -30,6 +30,17 @@
     [super viewDidLoad];
     RAC(self.textField,text) = RACObserve(self, content);
     self.btnSure.rac_command = self.sureCommand;
+    
+    [self.textField mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(150).priority(1000);
+    }];
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    [self.testButton mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(0).priority(500);
+    }];
 }
 
 -(RACSignal *)loadData{

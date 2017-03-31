@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFPassword;
 @property (weak, nonatomic) IBOutlet UIButton *btnSure;
 @property (nonatomic,strong) LQLoginViewModel * viewModel;
+@property (weak, nonatomic) IBOutlet UILabel *labAlert;
 @end
 
 @implementation LQLoginViewController
@@ -23,18 +24,33 @@
     [super viewDidLoad];
     
     @weakify(self)
-    [[self.textFName.rac_textSignal map:^id(NSString * value) {
-        return @(value.length > 6);
-    }] subscribeNext:^(NSNumber * isSuccess) {
+     RACSignal * userNameSignal = [[self.textFName.rac_textSignal map:^id(NSString * value) {
+        return @(value.length >= 6);
+    }] replayLazily];
+    
+    RACSignal * passwordSignal = [[self.textFPassword.rac_textSignal map:^id(NSString * value) {
+        return  @(value.length >= 6);
+    }] replayLazily];
+    
+    [userNameSignal subscribeNext:^(NSNumber * isSuccess) {
         @strongify(self)
         self.textFName.backgroundColor = isSuccess.boolValue ? [UIColor orangeColor] : [UIColor clearColor];
     }];
     
-    [[self.textFPassword.rac_textSignal map:^id(NSString * value) {
-        return  @(value.length > 6);
-    }] subscribeNext:^(NSNumber * isSuccess) {
-       @strongify(self)
+    [passwordSignal subscribeNext:^(NSNumber * isSuccess) {
+        @strongify(self)
         self.textFPassword.backgroundColor = isSuccess.boolValue ? [UIColor orangeColor] : [UIColor clearColor];
+    }];
+    
+    
+    
+    RACSignal * enabledSinal = [RACSignal combineLatest:@[userNameSignal,passwordSignal] reduce:^(NSNumber * um,NSNumber * pw){
+        return @(um.integerValue && pw.integerValue);
+    }];
+    RAC(self.btnSure,enabled) = enabledSinal;
+    
+    RAC(self.labAlert,text) = [enabledSinal map:^id(NSNumber * isEnabled) {
+        return isEnabled.boolValue ? @"按钮可以点击" : @"按钮不可点击";
     }];
 }
 - (IBAction)clickLogin:(id)sender {

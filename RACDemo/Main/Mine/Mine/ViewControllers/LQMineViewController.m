@@ -22,6 +22,8 @@ NSString * const mine_header_cell_name = @"mine_header_cell_name";
 
 @property (nonatomic,strong) LQMineViewModel * viewModel;
 
+@property (nonatomic,strong) RACSignal * tstSignal;
+
 @end
 
 
@@ -35,6 +37,17 @@ NSString * const mine_header_cell_name = @"mine_header_cell_name";
     [self setupNavItem];
     [self.view addSubview:[[UIView alloc]init]];
     [self.view addSubview:self.tableView];
+    
+    __block int a = 0;
+    self.tstSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        a++;
+        [subscriber sendNext:@(a)];
+        [subscriber sendCompleted];
+        NSLog(@"dddd");
+        return nil;
+    }];
+
+    
 }
 
 -(void)viewDidLayoutSubviews{
@@ -99,15 +112,22 @@ NSString * const mine_header_cell_name = @"mine_header_cell_name";
 
 #pragma mark - event response
 
--(void)tapleftItem{
-    LQDeliveryAddressVC * deliveryAddressVC = [[LQDeliveryAddressVC alloc] init];
-    [self.navigationController pushViewController:deliveryAddressVC animated:YES];
+-(void)tapRightItem{
+//    LQDeliveryAddressVC * deliveryAddressVC = [[LQDeliveryAddressVC alloc] init];
+//    [self.navigationController pushViewController:deliveryAddressVC animated:YES];
+//    [self.tstSignal subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
+//    [self.tstSignal subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
+    
 }
 
 #pragma mark - private methods
 
 -(void)setupNavItem{
-    UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithTitle:@"收货地址" style:UIBarButtonItemStylePlain target:self action:@selector(tapleftItem)];
+    UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithTitle:@"收货地址" style:UIBarButtonItemStylePlain target:self action:@selector(tapRightItem)];
     self.navigationItem.rightBarButtonItem = leftItem;
 }
 

@@ -72,7 +72,7 @@ NSString * const Edit_UserInfo_Cell = @"Edit_UserInfo_Cell";
 //    [setUserInfoVC.sureCommand.executionSignals.flatten subscribeNext:^(NSString * content) {
 //        NSLog(@"%@",content);
 //    }];
-        
+    
     [[setUserInfoVC.sureCommand.executionSignals flattenMap:^RACStream *(RACSignal *subscribeSignal) {
         //[subscribeSignal materialize] 将返回值的类型转换为RACEvent
         //takeUntilBlock直到return YES才停止操作，并向下传递x(RACEvent)的值
