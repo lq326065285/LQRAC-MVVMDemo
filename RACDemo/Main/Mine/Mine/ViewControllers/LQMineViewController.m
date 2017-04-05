@@ -110,6 +110,14 @@ NSString * const mine_header_cell_name = @"mine_header_cell_name";
     return 20;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        LQEditUserInfoVC * userInfoVC = [[LQEditUserInfoVC alloc] init];
+        [userInfoVC setUserInfoModel:self.viewModel.userInfoModel];
+        [self.navigationController pushViewController:userInfoVC animated:YES];
+    }
+}
+
 #pragma mark - event response
 
 -(void)tapRightItem{

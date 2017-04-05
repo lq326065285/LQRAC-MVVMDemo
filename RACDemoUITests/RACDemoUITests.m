@@ -35,6 +35,20 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+}
+
+-(void)testMyEditUserInfo{
+    XCUIApplication * app = [[XCUIApplication alloc] init];
+    [app.tabBars.buttons[@"我的"] tap];
+//    [app.tables.staticTexts[@"我的订单"] tap];
+    XCUIElement * cell = app.tables.cells.staticTexts[@"TheNameIsNull"];
+    [cell tap];
+    [app.tables.staticTexts[@"name:TheNameIsNull"] tap];
+    XCUIElement *textField = [[[[[[[[[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeTextField].element;
+    [textField tap];
+    [textField typeText:@"helloworld"];
+    [app.buttons[@"确  定"] tap];
 }
 
 @end

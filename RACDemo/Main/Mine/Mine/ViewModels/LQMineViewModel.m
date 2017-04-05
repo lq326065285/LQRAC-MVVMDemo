@@ -24,7 +24,7 @@
 -(LQUserInfoModel *)userInfoModel{
     if (!_userInfoModel) {
         _userInfoModel = [[LQUserInfoModel alloc] init];
-        _userInfoModel.name = @"the name is null";
+        _userInfoModel.name = @"TheNameIsNull";
     }
     return _userInfoModel;
 }

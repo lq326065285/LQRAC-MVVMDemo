@@ -48,7 +48,7 @@ NSString * const Edit_UserInfo_Cell = @"Edit_UserInfo_Cell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     LQMineCell * cell = [tableView dequeueReusableCellWithIdentifier:Edit_UserInfo_Cell];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.labName.text = self.viewModel.arrData[indexPath.row];
+    cell.labName.text = [NSString stringWithFormat:@"name:%@",self.viewModel.arrData[indexPath.row]];
     return cell;
 }
 
@@ -84,6 +84,8 @@ NSString * const Edit_UserInfo_Cell = @"Edit_UserInfo_Cell";
         }];
     }] subscribeNext:^(NSString * content) {
         NSLog(@"%@",content);
+        [self.viewModel.arrData replaceObjectAtIndex:0 withObject:content];
+        [self.tableView reloadData];
     }];
     
     [self.navigationController pushViewController:setUserInfoVC animated:YES];

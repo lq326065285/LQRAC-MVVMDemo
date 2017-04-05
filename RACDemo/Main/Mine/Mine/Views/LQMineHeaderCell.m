@@ -75,6 +75,7 @@
         _imgView.layer.borderColor = [UIColor grayColor].CGColor;
         _imgView.layer.borderWidth = 2;
         _imgView.userInteractionEnabled = YES;
+        _imgView.restorationIdentifier = @"theImage";
         UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] init];
         self.gestureSignal = [tap rac_gestureSignal];
         [_imgView addGestureRecognizer:tap];
