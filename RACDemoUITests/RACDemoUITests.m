@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "LQMineCell.h"
+
 @interface RACDemoUITests : XCTestCase
 
 @end
@@ -49,6 +51,14 @@
     [textField tap];
     [textField typeText:@"helloworld"];
     [app.buttons[@"确  定"] tap];
+//    [self expectationForPredicate:[NSPredicate predicateWithFormat:@"self.count = 2"] evaluatedWithObject:app.tables handler:nil];
+//    [self waitForExpectationsWithTimeout:2.0 handler:nil];
+//    XCUIElement * oldCell = app.tables.staticTexts[@"name:TheNameIsNull"];
+//    XCTAssertTrue(oldCell == nil,@"cell中的内容修改不成功");
+}
+
+-(void)testMock{
+    
 }
 
 @end

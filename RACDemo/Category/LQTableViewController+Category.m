@@ -6,10 +6,11 @@
 //  Copyright © 2017年 李强. All rights reserved.
 //
 
-#import "UIViewController+Category.h"
-
-@implementation UIViewController (Category)
+#import "LQTableViewController+Category.h"
 
 
-    
+@implementation LQTableViewController (Category)
+
+
+
 @end

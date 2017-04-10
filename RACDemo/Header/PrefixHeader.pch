@@ -24,4 +24,6 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "UILabel+CreateFactory.h"
 #import "UIButton+createFactory.h"
+#import "ConfigHeader.h"
+#import "NSString+Category.h"
 #endif /* PrefixHeader_pch */

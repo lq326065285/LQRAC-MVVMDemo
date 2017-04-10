@@ -46,8 +46,6 @@ NSString * const mine_header_cell_name = @"mine_header_cell_name";
         NSLog(@"dddd");
         return nil;
     }];
-
-    
 }
 
 -(void)viewDidLayoutSubviews{

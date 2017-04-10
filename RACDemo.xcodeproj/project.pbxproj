@@ -13,7 +13,7 @@
 		D5275DC71E7B82AB00DD3844 /* LQDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5275DC61E7B82AB00DD3844 /* LQDiscoverViewController.m */; };
 		D5275DCA1E7B82B900DD3844 /* LQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5275DC91E7B82B900DD3844 /* LQHomeViewController.m */; };
 		D5275DCD1E7B82C600DD3844 /* LQMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5275DCC1E7B82C600DD3844 /* LQMessageViewController.m */; };
-		D5275DD51E7B8EA300DD3844 /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D5275DD41E7B8EA300DD3844 /* UIViewController+Category.m */; };
+		D5275DD51E7B8EA300DD3844 /* LQTableViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D5275DD41E7B8EA300DD3844 /* LQTableViewController+Category.m */; };
 		D5275DE21E7B8F5100DD3844 /* LQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5275DDE1E7B8F5100DD3844 /* LQLoginViewController.m */; };
 		D5275DE31E7B8F5100DD3844 /* LQLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5275DDF1E7B8F5100DD3844 /* LQLoginViewController.xib */; };
 		D5275DE61E7B912E00DD3844 /* LQLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5275DE51E7B912E00DD3844 /* LQLoginViewModel.m */; };
@@ -39,6 +39,12 @@
 		D551167F1E7B7BCC00D72FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D551167D1E7B7BCC00D72FD5 /* LaunchScreen.storyboard */; };
 		D551168A1E7B7BCC00D72FD5 /* RACDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55116891E7B7BCC00D72FD5 /* RACDemoTests.m */; };
 		D55116951E7B7BCC00D72FD5 /* RACDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55116941E7B7BCC00D72FD5 /* RACDemoUITests.m */; };
+		D55D86361E9B65CE00A93F91 /* LQTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55D86351E9B65CE00A93F91 /* LQTableViewController.m */; };
+		D55D863A1E9B6B6000A93F91 /* LQViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D55D86391E9B6B6000A93F91 /* LQViewModel.m */; };
+		D55D863D1E9B6DAC00A93F91 /* LQConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D55D863C1E9B6DAC00A93F91 /* LQConfigModel.m */; };
+		D55D86401E9B6EB600A93F91 /* LQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D55D863F1E9B6EB600A93F91 /* LQTableViewCell.m */; };
+		D55D86431E9B6F4700A93F91 /* LQTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D55D86421E9B6F4700A93F91 /* LQTableViewCellViewModel.m */; };
+		D55D86461E9B857B00A93F91 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D55D86451E9B857B00A93F91 /* NSString+Category.m */; };
 		D57BD5071E7F8ACA009456D4 /* LQGlobalService.m in Sources */ = {isa = PBXBuildFile; fileRef = D57BD5061E7F8ACA009456D4 /* LQGlobalService.m */; };
 		D57BD5151E7FB47E009456D4 /* LQDeliveryAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D57BD5121E7FB47E009456D4 /* LQDeliveryAddressVC.m */; };
 		D57BD5191E7FB4BB009456D4 /* LQDeliveryAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D57BD5181E7FB4BB009456D4 /* LQDeliveryAddressCell.m */; };
@@ -78,8 +84,8 @@
 		D5275DCB1E7B82C600DD3844 /* LQMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMessageViewController.h; sourceTree = "<group>"; };
 		D5275DCC1E7B82C600DD3844 /* LQMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMessageViewController.m; sourceTree = "<group>"; };
 		D5275DD21E7B831600DD3844 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		D5275DD31E7B8EA300DD3844 /* UIViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
-		D5275DD41E7B8EA300DD3844 /* UIViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
+		D5275DD31E7B8EA300DD3844 /* LQTableViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LQTableViewController+Category.h"; sourceTree = "<group>"; };
+		D5275DD41E7B8EA300DD3844 /* LQTableViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LQTableViewController+Category.m"; sourceTree = "<group>"; };
 		D5275DDD1E7B8F5100DD3844 /* LQLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQLoginViewController.h; sourceTree = "<group>"; };
 		D5275DDE1E7B8F5100DD3844 /* LQLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQLoginViewController.m; sourceTree = "<group>"; };
 		D5275DDF1E7B8F5100DD3844 /* LQLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQLoginViewController.xib; sourceTree = "<group>"; };
@@ -127,6 +133,20 @@
 		D55116901E7B7BCC00D72FD5 /* RACDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55116941E7B7BCC00D72FD5 /* RACDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDemoUITests.m; sourceTree = "<group>"; };
 		D55116961E7B7BCC00D72FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D55D86341E9B65CE00A93F91 /* LQTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTableViewController.h; sourceTree = "<group>"; };
+		D55D86351E9B65CE00A93F91 /* LQTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTableViewController.m; sourceTree = "<group>"; };
+		D55D86371E9B66A500A93F91 /* ConfigHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigHeader.h; sourceTree = "<group>"; };
+		D55D86381E9B6B6000A93F91 /* LQViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQViewModel.h; sourceTree = "<group>"; };
+		D55D86391E9B6B6000A93F91 /* LQViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQViewModel.m; sourceTree = "<group>"; };
+		D55D863B1E9B6DAC00A93F91 /* LQConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQConfigModel.h; sourceTree = "<group>"; };
+		D55D863C1E9B6DAC00A93F91 /* LQConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQConfigModel.m; sourceTree = "<group>"; };
+		D55D863E1E9B6EB600A93F91 /* LQTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTableViewCell.h; sourceTree = "<group>"; };
+		D55D863F1E9B6EB600A93F91 /* LQTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTableViewCell.m; sourceTree = "<group>"; };
+		D55D86411E9B6F4700A93F91 /* LQTableViewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTableViewCellViewModel.h; sourceTree = "<group>"; };
+		D55D86421E9B6F4700A93F91 /* LQTableViewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTableViewCellViewModel.m; sourceTree = "<group>"; };
+		D55D86441E9B857B00A93F91 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		D55D86451E9B857B00A93F91 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		D55D86471E9B893700A93F91 /* LQTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTableViewDelegate.h; sourceTree = "<group>"; };
 		D57BD5051E7F8ACA009456D4 /* LQGlobalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQGlobalService.h; sourceTree = "<group>"; };
 		D57BD5061E7F8ACA009456D4 /* LQGlobalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQGlobalService.m; sourceTree = "<group>"; };
 		D57BD5111E7FB47E009456D4 /* LQDeliveryAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQDeliveryAddressVC.h; sourceTree = "<group>"; };
@@ -176,8 +196,10 @@
 		D5275DB71E7B81C300DD3844 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				D5275DD31E7B8EA300DD3844 /* UIViewController+Category.h */,
-				D5275DD41E7B8EA300DD3844 /* UIViewController+Category.m */,
+				D5275DD31E7B8EA300DD3844 /* LQTableViewController+Category.h */,
+				D5275DD41E7B8EA300DD3844 /* LQTableViewController+Category.m */,
+				D55D86441E9B857B00A93F91 /* NSString+Category.h */,
+				D55D86451E9B857B00A93F91 /* NSString+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -208,6 +230,17 @@
 		D5275DBA1E7B81C300DD3844 /* SuperClass */ = {
 			isa = PBXGroup;
 			children = (
+				D55D86381E9B6B6000A93F91 /* LQViewModel.h */,
+				D55D86391E9B6B6000A93F91 /* LQViewModel.m */,
+				D55D863B1E9B6DAC00A93F91 /* LQConfigModel.h */,
+				D55D863C1E9B6DAC00A93F91 /* LQConfigModel.m */,
+				D55D86411E9B6F4700A93F91 /* LQTableViewCellViewModel.h */,
+				D55D86421E9B6F4700A93F91 /* LQTableViewCellViewModel.m */,
+				D55D863E1E9B6EB600A93F91 /* LQTableViewCell.h */,
+				D55D863F1E9B6EB600A93F91 /* LQTableViewCell.m */,
+				D55D86341E9B65CE00A93F91 /* LQTableViewController.h */,
+				D55D86351E9B65CE00A93F91 /* LQTableViewController.m */,
+				D55D86471E9B893700A93F91 /* LQTableViewDelegate.h */,
 			);
 			path = SuperClass;
 			sourceTree = "<group>";
@@ -253,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				D5275DD21E7B831600DD3844 /* PrefixHeader.pch */,
+				D55D86371E9B66A500A93F91 /* ConfigHeader.h */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -729,6 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5275DC11E7B824E00DD3844 /* LQTabBarViewController.m in Sources */,
+				D55D86431E9B6F4700A93F91 /* LQTableViewCellViewModel.m in Sources */,
 				D5428E761E826B08003B9CB2 /* LQUserInfoModel.m in Sources */,
 				D5428E621E824F20003B9CB2 /* LQMineHeaderCell.m in Sources */,
 				D5275DCD1E7B82C600DD3844 /* LQMessageViewController.m in Sources */,
@@ -737,23 +772,28 @@
 				D57BD5191E7FB4BB009456D4 /* LQDeliveryAddressCell.m in Sources */,
 				D5428E6F1E8250DA003B9CB2 /* UILabel+CreateFactory.m in Sources */,
 				D5275DC71E7B82AB00DD3844 /* LQDiscoverViewController.m in Sources */,
-				D5275DD51E7B8EA300DD3844 /* UIViewController+Category.m in Sources */,
+				D5275DD51E7B8EA300DD3844 /* LQTableViewController+Category.m in Sources */,
 				D5428E721E8250DA003B9CB2 /* UIView+createFactory.m in Sources */,
 				D5428E6E1E8250DA003B9CB2 /* UIButton+createFactory.m in Sources */,
+				D55D86401E9B6EB600A93F91 /* LQTableViewCell.m in Sources */,
 				D5428E5E1E824CED003B9CB2 /* LQMineCell.m in Sources */,
 				D5275DE21E7B8F5100DD3844 /* LQLoginViewController.m in Sources */,
 				D55116711E7B7BCC00D72FD5 /* main.m in Sources */,
 				D57BD51F1E7FBFA5009456D4 /* LQDeliveryAddressViewModel.m in Sources */,
 				D57BD5071E7F8ACA009456D4 /* LQGlobalService.m in Sources */,
 				D5275DCA1E7B82B900DD3844 /* LQHomeViewController.m in Sources */,
+				D55D86361E9B65CE00A93F91 /* LQTableViewController.m in Sources */,
+				D55D863A1E9B6B6000A93F91 /* LQViewModel.m in Sources */,
 				D5428E701E8250DA003B9CB2 /* UITextField+CreateFactory.m in Sources */,
 				D5428E811E827680003B9CB2 /* LQEditUserInfoVC.m in Sources */,
 				D5275DC41E7B826B00DD3844 /* LQNavigationViewController.m in Sources */,
 				D5428E561E824A1B003B9CB2 /* LQMineViewController.m in Sources */,
 				D5428E591E824A64003B9CB2 /* LQMineViewModel.m in Sources */,
 				D5428E711E8250DA003B9CB2 /* UITextView+CreateFactory.m in Sources */,
+				D55D863D1E9B6DAC00A93F91 /* LQConfigModel.m in Sources */,
 				D5428E841E8279AD003B9CB2 /* LQEditUserInfoViewModel.m in Sources */,
 				D5428E871E836F52003B9CB2 /* LQSetUserInfoVC.m in Sources */,
+				D55D86461E9B857B00A93F91 /* NSString+Category.m in Sources */,
 				D57BD51C1E7FBF64009456D4 /* LQDeliveryAddressCellViewModel.m in Sources */,
 				D5275DE61E7B912E00DD3844 /* LQLoginViewModel.m in Sources */,
 			);
@@ -907,6 +947,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RACDemo/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = RACDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = text.RACDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -920,6 +961,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RACDemo/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = RACDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = text.RACDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

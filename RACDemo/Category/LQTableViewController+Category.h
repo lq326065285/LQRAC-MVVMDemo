@@ -6,9 +6,9 @@
 //  Copyright © 2017年 李强. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "LQTableViewController.h"
 
-@interface UIViewController (Category)
+@interface LQTableViewController (Category)
 
-    
+
 @end
